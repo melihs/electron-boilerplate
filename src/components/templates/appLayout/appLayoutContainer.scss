@@ -1,0 +1,8 @@
+@import "../../../styles/colors";
+
+.app-layout-container {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-theme-background;
+  width: 100%;
+}
