@@ -1,0 +1,16 @@
+.button {
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  background-color: #343a40;
+
+  &:hover {
+    background-color: #535a60;
+  }
+}
+
+.button-light {
+  background-color: transparent;
+}

@@ -1,0 +1,8 @@
+@mixin theme-colors($class-name,$background-color, $text-color) {
+  @media (prefers-color-scheme: dark) {
+    .#{$class-name} {
+      background: $background-color;
+      color: $text-color;
+    }
+  }
+}
