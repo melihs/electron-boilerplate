@@ -1,9 +1,10 @@
-@import "../../../styles/colors";
-
 .sidebar {
   display: flex;
   width: 20%;
   height: 100%;
   padding: 10px;
-  background-color: $secondary-color
+  color: $gray-800;
+  background-color: $light;
 }
+
+@include theme-colors(sidebar, $gray-800, white);

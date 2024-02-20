@@ -1,7 +1,5 @@
 import Navbar from "../../organisms/navbar/Navbar";
 import Footer from "../../organisms/footer/Footer";
-import "./appLayoutContainer.scss";
-
 
 const AppLayout = () => {
   return (

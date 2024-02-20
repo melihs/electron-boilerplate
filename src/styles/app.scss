@@ -1,8 +1,14 @@
 @import "reset";
 @import "colors";
+@import "mixins";
+@import "../components/atoms/button/button";
+@import "../components/organisms/footer/footer";
+@import "../components/organisms/navbar/navbar";
+@import "../components/organisms/sidebar/sidebar";
+@import "../components/templates/appLayout/appLayoutContainer";
 
-body {
-  color: #dfe5ff;
+:root {
+  color-scheme: light dark;
 }
 
 html,

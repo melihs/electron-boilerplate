@@ -2,9 +2,12 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  padding: 10px;
   justify-content: center;
+  align-items: center;
   min-height: 40px;
   width: 100%;
-  background-color: darkred;
+  color: $gray-800;
+  background-color: $light;
 }
+
+@include theme-colors(footer, $yellow-600, $gray-800);
