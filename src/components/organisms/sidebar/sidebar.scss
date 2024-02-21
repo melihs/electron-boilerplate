@@ -7,4 +7,9 @@
   background-color: $light;
 }
 
-@include theme-colors(sidebar, $gray-800, white);
+.sidebar.hide {
+  display: none;
+}
+
+
+@include theme-colors(sidebar, $gray-500, $info);

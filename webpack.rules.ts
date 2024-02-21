@@ -28,10 +28,11 @@ export const rules: Required<ModuleOptions>["rules"] = [
   },
   {
     test: /\.s[ac]ss$/i,
-    use: [
-      "style-loader",
-      "css-loader",
-      "sass-loader",
-    ],
+    use: ["style-loader", "css-loader", "sass-loader"],
+  },
+  // loads common image formats
+  {
+    test: /\.(png|svg|jpg|jpeg|gif)$/i,
+    type: "asset/resource",
   },
 ];

@@ -1,4 +1,4 @@
-export interface AppSliceTypes {
+export interface IState {
   isDarkMode: boolean;
   isShowSidebar: boolean;
 }

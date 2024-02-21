@@ -5,4 +5,4 @@
   background-color: white;
 }
 
-@include theme-colors(app-layout-container, $gray-600, white);
+@include theme-colors(app-layout-container, $gray-900, $info);
