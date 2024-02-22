@@ -1,31 +1,31 @@
-## ElectroPlate
-
 ![logo.png](src%2Fassets%2Flogo.png)
 
-#### Electron js Boilerplate v1
+## Electron js Boilerplate v1 🤖
 
 ### Getting started
 
 ``` bash
-
+git clone https://github.com/melihs/electron-boilerplate
+cd electron-boilerplate/
 ```
 
 ## Features
 
-### Dev
+### Dev 🚀
 
 ```bash
 yarn 
 yarn start
 ```
 
-### Make
+### Make 🔨
 
 ```bash
 yarn make
 ```
 
-### Libs:
+### Libs:  ⚙️
+
 - react
 - redux toolkit
 - lodash
