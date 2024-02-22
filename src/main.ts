@@ -3,6 +3,8 @@ import { app, ipcMain, nativeTheme, BrowserWindow } from "electron";
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 
+const isDevelopment = process.env.NODE_ENV === "development";
+
 if (require("electron-squirrel-startup")) {
   app.quit();
 }
@@ -11,8 +13,10 @@ const createWindow = (): void => {
   const mainWindow: BrowserWindow = new BrowserWindow({
     height: 600,
     width: 800,
+    icon: "./src/assets/icon.png",
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
+      devTools: isDevelopment,
     },
   });
 

@@ -12,6 +12,9 @@ import { rendererConfig } from "./webpack.renderer.config";
 const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
+    icon: "./src/assets/icon",
+    executableName: "ElectroPlate",
+    appCopyright: "Copyright (C) 2024 Melih Şahin, ElectroPlate",
   },
   rebuildConfig: {},
   makers: [
@@ -19,6 +22,26 @@ const config: ForgeConfig = {
     new MakerZIP({}, ["darwin"]),
     new MakerRpm({}),
     new MakerDeb({}),
+    {
+      name: "@electron-forge/maker-deb",
+      config: {
+        options: {
+          icon: "./src/assets/icon.png",
+        },
+      },
+    },
+    {
+      name: "@electron-forge/maker-squirrel",
+      config: {
+        icon: "./src/assets/icon.ico",
+      },
+    },
+    {
+      name: "@electron-forge/maker-wix",
+      config: {
+        icon: "./src/assets/icon.ico",
+      },
+    },
   ],
   plugins: [
     new AutoUnpackNativesPlugin({}),
