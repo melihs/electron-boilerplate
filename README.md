@@ -10,6 +10,10 @@ cd electron-boilerplate/
 ```
 
 ## Features
+- dark mode
+- show/hide sidebar
+- atomic design
+- quick commands
 
 ### Dev 🚀
 
@@ -18,13 +22,19 @@ yarn
 yarn start
 ```
 
-### Make 🔨
+### Make 🛠️
 
 ```bash
 yarn make
 ```
 
-### Libs:  ⚙️
+### Optional Commands 🎁
+Create components based on the selected folder.
+```bash
+yarn plop
+```
+
+### Libs: ⚙️
 
 - react
 - redux toolkit
